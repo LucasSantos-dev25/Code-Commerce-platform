@@ -1,0 +1,75 @@
+# ===========================
+# DEPENDÊNCIAS
+# ===========================
+node_modules/
+.pnpm-store/
+
+# ===========================
+# BUILD / OUTPUT
+# ===========================
+dist/
+.next/
+out/
+build/
+
+# ===========================
+# TURBO
+# ===========================
+.turbo/
+
+# ===========================
+# VARIÁVEIS DE AMBIENTE
+# ===========================
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# ===========================
+# PRISMA
+# ===========================
+# NÃO ignorar o schema.prisma nem as migrations
+# Ignorar apenas o client gerado
+apps/api/src/generated/
+
+# ===========================
+# LOGS
+# ===========================
+*.log
+npm-debug.log*
+pnpm-debug.log*
+logs/
+
+# ===========================
+# SISTEMA OPERACIONAL
+# ===========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===========================
+# EDITORES E IDEs
+# ===========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ===========================
+# TESTES
+# ===========================
+coverage/
+.nyc_output/
+
+# ===========================
+# DOCKER
+# ===========================
+# NÃO ignorar docker-compose.yml
+# Ignorar apenas overrides locais
+docker-compose.override.yml
+
+# ===========================
+# TYPESCRIPT
+# ===========================
+*.tsbuildinfo

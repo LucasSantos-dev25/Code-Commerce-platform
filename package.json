@@ -1,0 +1,16 @@
+{
+  "name": "code-commerce-platform",
+  "private": true,
+  "packageManager": "pnpm@11.9.0",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "turbo run test"
+  },
+  "devDependencies": {
+    "prettier": "latest",
+    "turbo": "2.9.3",
+    "typescript": "latest"
+  }
+}
