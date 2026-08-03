@@ -28,7 +28,7 @@ enum OrderStatus {
 
 enum ProductType {
   BASE
-  ADON
+  ADDON
 }
 
 enum DependencyRule {
