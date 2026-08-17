@@ -1,6 +1,9 @@
 import { Injectable } from '@nestjs/common';
 import { CreateProductDto } from './dto/create-product.dto';
-import { UpdateProductDto } from './dto/product-response.dto';
+import {
+  IProductsRepository,
+  PRODUCTS_REPOSITORY,
+} from './repositories/products.repository.interface'
 
 @Injectable()
 export class ProductsService {
@@ -14,10 +17,6 @@ export class ProductsService {
 
   findOne(id: number) {
     return `This action returns a #${id} product`;
-  }
-
-  update(id: number, updateProductDto: UpdateProductDto) {
-    return `This action updates a #${id} product`;
   }
 
   remove(id: number) {
